@@ -1,0 +1,72 @@
+name: soundbridge_android
+description: SoundBridge - Local Audio Sharing - Android App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Routing + deep links
+  go_router: ^13.2.0
+  uni_links: ^0.5.1
+
+  # Networking
+  web_socket_channel: ^3.0.1
+  shelf: ^1.4.1
+  shelf_web_socket: ^2.0.0
+  network_info_plus: ^6.0.1
+  connectivity_plus: ^6.0.3
+
+  # QR + NFC
+  mobile_scanner: ^5.2.3
+  qr_flutter: ^4.1.0
+  flutter_nfc_kit: ^3.4.0
+
+  # Storage
+  shared_preferences: ^2.3.2
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # UI
+  google_fonts: ^6.2.1
+  lottie: ^3.1.2
+  fl_chart: ^0.68.0
+
+  # Notifications
+  flutter_local_notifications: ^17.2.2
+
+  # Utils
+  uuid: ^4.4.0
+  crypto: ^3.0.3
+  permission_handler: ^11.3.1
+  package_info_plus: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  hive_generator: ^1.1.3
+  build_runner: ^2.4.9
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lottie/
+    - assets/icons/
+    - assets/fonts/
+  fonts:
+    - family: Syne
+      fonts:
+        - asset: assets/fonts/Syne-Bold.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Regular.ttf
+          weight: 400
