@@ -9,13 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  ndef: ^0.3.1
+  http: ^1.2.1
 
   # State management
   flutter_riverpod: ^2.5.1
 
   # Routing + deep links
   go_router: ^13.2.0
-  uni_links: ^0.5.1
+  app_links: ^6.3.4
 
   # Networking
   web_socket_channel: ^3.0.1
